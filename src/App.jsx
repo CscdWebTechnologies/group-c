@@ -4,9 +4,9 @@ import Landing from './pages/Landing';
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="min-h-screen w-full overflow-hidden">
       <Landing />
-    </React.Fragment>
+    </div>
   )
 }
 

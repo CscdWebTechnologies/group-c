@@ -12,11 +12,19 @@ module.exports = {
   },
   theme: {
     extend: {
+      flex: {
+        '2': '2 1 0%',
+        '6': '6 1 0%'
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      borderWidth: ['hover', 'focus'],
+    }
+  },
   plugins: []
 };

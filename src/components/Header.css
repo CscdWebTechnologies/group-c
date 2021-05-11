@@ -1,0 +1,24 @@
+/* nav section and nav link styles */
+.NavSection {
+	padding: 40px 45px;
+	top: calc(100% + 1px);
+	transition: all 150ms linear 0s, box-shadow 0ms linear 0s;
+	border-bottom: 1px solid rgb(236, 239, 241);
+}
+
+.NavSection__content {
+	transition: all 300ms ease-in-out 0s;
+}
+
+.NavLink > div:before {
+	content: "";
+	height: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.NavLink > div:hover:before {
+	@apply bg-blue-600;
+}

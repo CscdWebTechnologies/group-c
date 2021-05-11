@@ -1,11 +1,12 @@
 import React from 'react'
-import logo from '../static/logo.svg'
+
+import Header from '../components/Header';
 
 function App() {
   return (
-    <div className="min-h-screen w-full flex flex-col justify-center items-center">
-      <img src={logo} className="" alt="logo" />
-    </div>
+    <React.Fragment>
+			<Header />
+		</React.Fragment>
   )
 }
 
