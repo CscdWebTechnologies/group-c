@@ -30,6 +30,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      borderRadius: {
+        sm: '4px',
+      },
     },
   },
   variants: {

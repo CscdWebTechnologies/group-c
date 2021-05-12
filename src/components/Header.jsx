@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import logo from '../static/logo.svg'
+import logo from '../static/logo.svg';
 
 import Menu from '../utils/menu';
 
@@ -19,6 +19,11 @@ const Header = () => {
           <a className="inline-block" href="/">
             <img src={logo} height="20" width="112" alt="Logo" style={{maxHeight: '20px'}} />
           </a>
+        </div>
+
+        {/* burger button */}
+        <div className="BurgerIcon py-5 pl-5 hidden">
+          <div className="BurgerIcon__line"></div>
         </div>
 
         <nav className="flex items-center justify-center flex-6">

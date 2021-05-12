@@ -38,3 +38,53 @@
 	grid-gap: 20px;
 	grid-auto-flow: row;
 }
+
+.CardIcon {
+	filter: drop-shadow(rgba(91, 97, 110, 0.14) 0px 2px 2px) drop-shadow(rgba(91, 97, 110, 0.12) 0px 3px 1px) drop-shadow(rgba(91, 97, 110, 0.2) 0px 1px 5px);
+}
+
+.BurgerIcon {
+	position: relative;
+	width: 18px;
+	height: 17px;
+	cursor: pointer;
+}
+
+.BurgerIcon__line {
+	/*position: absolute;*/
+	top: 8px;
+	/*width: 100%;*/
+	/*height: 2px;*/
+	/*background-color: rgb(5, 15, 25);*/
+	/*border-radius: 4px;*/
+	transform: initial;
+	/*transition: transform 0.3s ease 0s, background-color 0s ease 0s;*/
+}
+
+.BurgerIcon__line,
+.BurgerIcon__line::before,
+.BurgerIcon__line::after {
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(5, 15, 25);
+	border-radius: 4px;
+	transition: transform 0.3s ease 0s, background-color 0s ease 0s;
+}
+
+.BurgerIcon__line::before,
+.BurgerIcon__line::after {
+	display: block;
+	/*position: absolute;*/
+	/*width: 100%;*/
+	/*height: 2px;*/
+	/*background-color: rgb(5, 15, 25);*/
+	/*border-radius: 4px;*/
+	content: "";
+	transform: translateY(-8px);
+	/*transition: transform 0.3s ease 0s, background-color 0s ease 0s;*/
+}
+
+.BurgerIcon__line::after {
+	transition: translateY(8px) rotate(0deg)
+}
