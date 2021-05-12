@@ -38,7 +38,7 @@ const Hero = () => {
 								className="p-5 border rounded-sm transition duration-150 ease bg-white text-lg focus:border-blue-primary focus:outline-none"
 								type="text"
 								placeholder="Email address"
-								autocomplete="off"
+								autoComplete="off"
 								style={{flex: '1 1 0px'}}
 							/>
 							<button className="ml-3 p-6 text-base w-full rounded-sm text-white transition duration-75 ease-in-out border border-blue-primary bg-blue-primary">
@@ -73,15 +73,15 @@ const Hero = () => {
 							</g>
 							</g>
 							<defs>
-							<filter id="prefix__filter0_dd" x="48" y="0" width="519" height="956" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+							<filter id="prefix__filter0_dd" x="48" y="0" width="519" height="956" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+							<feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
 							<feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
 							<feOffset dx="-32" dy="50"></feOffset><feGaussianBlur stdDeviation="30"></feGaussianBlur>
 							<feColorMatrix values="0 0 0 0 0.321569 0 0 0 0 0.321569 0 0 0 0 0.321569 0 0 0 0.25 0"></feColorMatrix>
-							<feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="15"></feOffset><feGaussianBlur stdDeviation="7.5"></feGaussianBlur><feColorMatrix values="0 0 0 0 0.320833 0 0 0 0 0.320833 0 0 0 0 0.320833 0 0 0 0.1 0"></feColorMatrix><feBlend in2="effect1_dropShadow" result="effect2_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect2_dropShadow" result="shape"></feBlend></filter><filter id="prefix__filter1_f" x="143.5" y="13" width="72" height="830" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur></filter><filter id="prefix__filter2_f" x="463.5" y="12.5" width="72" height="830" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur></filter><radialGradient id="prefix__paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(286.75008 212.24974 -632.54832 854.57482 179.75 390.25)"><stop stop-opacity="0.2"></stop><stop offset="1" stop-opacity="0"></stop></radialGradient><radialGradient id="prefix__paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 756.5 -2254.52 0 499 131)"><stop stop-opacity="0"></stop><stop offset="0.453" stop-opacity="0.2"></stop>
-							<stop offset="1" stop-opacity="0"></stop></radialGradient>
+							<feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix><feOffset dy="15"></feOffset><feGaussianBlur stdDeviation="7.5"></feGaussianBlur><feColorMatrix values="0 0 0 0 0.320833 0 0 0 0 0.320833 0 0 0 0 0.320833 0 0 0 0.1 0"></feColorMatrix><feBlend in2="effect1_dropShadow" result="effect2_dropShadow"></feBlend><feBlend in="SourceGraphic" in2="effect2_dropShadow" result="shape"></feBlend></filter><filter id="prefix__filter1_f" x="143.5" y="13" width="72" height="830" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB"><feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur></filter><filter id="prefix__filter2_f" x="463.5" y="12.5" width="72" height="830" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB"><feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur></filter><radialGradient id="prefix__paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(286.75008 212.24974 -632.54832 854.57482 179.75 390.25)"><stop stopOpacity="0.2"></stop><stop offset="1" stopOpacity="0"></stop></radialGradient><radialGradient id="prefix__paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 756.5 -2254.52 0 499 131)"><stop stopOpacity="0"></stop><stop offset="0.453" stopOpacity="0.2"></stop>
+							<stop offset="1" stopOpacity="0"></stop></radialGradient>
 							<linearGradient id="prefix__paint0_linear" x1="539" y1="654" x2="-169.5" y2="799.5" gradientUnits="userSpaceOnUse">
-							<stop stop-color="#F2F2F3"></stop><stop offset="0.64" stop-color="#CACED2"></stop></linearGradient><pattern id="prefix__img1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 375 812">
+							<stop stopColor="#F2F2F3"></stop><stop offset="0.64" stopColor="#CACED2"></stop></linearGradient><pattern id="prefix__img1" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 375 812">
 							<image href="https://assets.coinbase.com/assets/portfolio.352f1ebd5622fb93068757ca3a33b88b.svg" width="375" height="812"></image>
 							</pattern>
 							</defs>
