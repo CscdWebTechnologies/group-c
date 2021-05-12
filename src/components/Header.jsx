@@ -11,7 +11,7 @@ import NavItem from './NavItem';
 
 const Header = () => {
   return (
-    <header className="bg-poker sticky z-20 top-0 border-b text-sm font-medium tracking-wide">
+    <header className="sticky z-20 top-0 border-b tracking-wide">
 
       <div className="h-16 px-5 flex max-w-screen-xl mx-auto">
 
@@ -34,9 +34,17 @@ const Header = () => {
           })}
         </nav>
 
-        <div className="flex items-center justify-end flex-2">
-          <a className="mr-5 hover:text-blue-600" href="#/signin">Sign in</a>
-          <button className="font-medium text-white border border-blue-600 bg-blue-600" style={{padding: '10px 12px', lineHeight: '14px', borderRadius: '4px'}}>
+        <div className="flex items-center justify-end flex-2 text-sm font-medium">
+          <a
+            className="mr-5 hover:text-blue-primary"
+            href="#/signin"
+          >
+            Sign in
+          </a>
+          <button
+            className="font-medium text-white border border-blue-primary bg-blue-primary"
+            style={{padding: '10px 12px', lineHeight: '14px', borderRadius: '4px'}}
+          >
             Get started
           </button>
         </div>

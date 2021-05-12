@@ -1,11 +1,30 @@
 import React from 'react';
 
 const Card = props => {
+	const hasIcon = !('icon' in props && props.icon == undefined);
+	const hasDescription = !('description' in props && props.description == undefined);
+
 	return (
-		<a href="#">
-			{props.icon}
-			<div>{props.title}</div>
-			<div>{props.description}</div>
+		<a
+			className="inline-flex"
+			style={{minWidth: '145px'}}
+			href="#"
+		>
+			{hasIcon ?
+				<span>{props.icon}</span> :
+				<svg className="mt-1 mr-5" width="8" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.172 5.773L2.257.823.5 2.593l3.157 3.18L.5 8.953l1.757 1.77 4.915-4.95z" fill="#050F19"></path>
+				</svg>
+			}
+			<div
+				className="flex flex-col"
+				style={{maxWidth: '316px'}}
+			>
+				<h4 className="font-medium">{props.title}</h4>
+				{hasDescription &&
+					<p className="font-light">{props.description}</p>
+				}
+			</div>
 		</a>
 	)
 }

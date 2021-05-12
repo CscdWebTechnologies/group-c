@@ -12,6 +12,17 @@ module.exports = {
   },
   theme: {
     extend: {
+      colors: {
+        gray: {
+          light: 'rgb(236, 239, 241)',
+        },
+        blue: {
+          primary: '#0052ff',
+        },
+      },
+      borderColor: theme => ({
+        DEFAULT: theme('colors.gray.light', 'currentColor')
+      }),
       flex: {
         '2': '2 1 0%',
         '6': '6 1 0%'
