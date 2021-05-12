@@ -8,28 +8,28 @@ const NavItem = props => {
 
   return (
     <div
-      className="NavItem h-full inline-flex"
+      className="lg:NavItem lg:h-full lg:inline-flex"
     >
 
       <a
-        className="NavLink h-full inline-flex"
+        className="lg:NavLink lg:h-full lg:inline-flex"
         href="#"
       >
-        <div className="NavLink__inner h-full mx-5 inline-flex items-center justify-center relative">
+        <div className="px-6 py-5 lg:p-0 lg:NavLink__inner lg:h-full lg:mx-5 lg:inline-flex lg:items-center lg:justify-center lg:relative">
           <span className="text-sm font-medium">{props.name}</span>
         </div>
       </a>
 
       {hasSection &&
         <section
-          className="NavSection px-10 py-11 absolute z-10 inset-x-0 opacity-0 invisible pointer-events-none bg-white border-b"
+          className="bg-gray-100 py-5 lg:bg-white lg:NavSection lg:px-10 lg:py-11 lg:absolute lg:z-10 lg:inset-x-0 lg:opacity-0 lg:invisible lg:pointer-events-none lg:bg-white lg:border-b"
         >
           <div
-            className="NavSection__content max-w-screen-lg mx-auto opacity-0 flex justify-center"
+            className="lg:NavSection__content lg:max-w-screen-lg lg:mx-auto lg:opacity-0 lg:flex lg:justify-center"
           >
             {/* links */}
             <div
-              className="grid items-start justify-end mr-16"
+              className="lg:grid lg:items-start lg:justify-end lg:mr-16"
             >
               {Links.map((item) => {
                 return (
@@ -44,7 +44,7 @@ const NavItem = props => {
             </div>
             {/* summary */}
             <div
-              className="flex-1"
+              className="hidden lg:block flex-1"
               style={{maxWidth: '320px'}}
             >
               <h4 className="font-medium">{props.summary.title}</h4>
