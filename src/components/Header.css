@@ -1,6 +1,9 @@
-/* nav section and nav link styles */
+.Nav-offset-top {
+	top: 58px;
+}
+
 .NavSection {
-	top: calc(100% + 1px);
+	top: 58.5px;
 	transition: all 150ms linear 0s, box-shadow 0ms linear 0s;
 }
 
@@ -17,20 +20,25 @@
 	right: 0;
 }
 
-.NavItem:hover .NavLink__inner:before {
-	@apply bg-blue-600;
+.NavLink:focus + .NavSection {
+	display: block;
 }
 
-.NavItem:hover .NavSection {
-	opacity: 1 !important;
-	visibility: visible !important;
-	pointer-events: auto !important;
-}
+@screen lg {
+	.NavItem:hover .NavLink__inner:before {
+		@apply bg-blue-600;
+	}
 
-.NavItem:hover .NavSection__content {
-	opacity: 1 !important;
-}
+	.NavItem:hover .NavSection {
+		opacity: 1 !important;
+		visibility: visible !important;
+		pointer-events: auto !important;
+	}
 
+	.NavItem:hover .NavSection__content {
+		opacity: 1 !important;
+	}
+}
 
 .NavSection > div:first-child {
 	flex: 0 1 0%;

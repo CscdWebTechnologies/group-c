@@ -3,10 +3,10 @@ import React from 'react'
 const Hero = () => {
 	return (
 		<section
-			className="mx-auto flex flex-shrink-0 w-full overflow-hidden"
-			style={{padding: '24px 56px', maxWidth: '1142px'}}
+			className="py-6 px-6 sm:px-14 mx-auto w-full overflow-hidden"
+			style={{maxWidth: '1142px'}}
 		>
-			<div className="flex items-center flex-row">
+			<div className="sm:flex sm:items-center sm:flex-row">
 
 				{/* right */}
 				<div
@@ -23,25 +23,23 @@ const Hero = () => {
 							<path d="M0 7h12.17l-3.28 3.28 1.41 1.41L16 6 10.3.31 8.89 1.72 12.17 5H0v2z" fill="#1652F0"></path>
 						</svg>
 					</div>
-					<h1 className="mt-2 mb-4 text-6xl font-bold leading-tight md:max-w-sm">
+					<h1 className="mt-2 mb-4 text-4xl sm:text-6xl font-bold leading-tight md:max-w-sm">
 						Jump start your crypto portfolio
 					</h1>
-					<h2 className="mb-8 text-lg font-semibold">
+					<h2 className="mb-8 text-base sm:text-lg sm:font-semibold">
 						Coinbase is the easiest place to buy and sell cryptocurrency. Sign up and get started today.
 					</h2>
 					<div
-						className="flex items-start flex-col"
-						style={{minWidth: '480px'}}
+						className="flex self-stretch sm:items-start flex-col min-w-0 w-full md:min-w-sm"
 					>
-						<form className="flex w-full">
+						<form className="flex flex-col sm:flex-row w-full">
 							<input
-								className="p-5 border rounded-sm transition duration-150 ease bg-white text-lg focus:border-blue-primary focus:outline-none"
+								className="px-5 py-4 flex-auto font-light text-lg border rounded-sm transition duration-150 ease bg-white focus:border-blue-primary focus:outline-none"
 								type="text"
 								placeholder="Email address"
 								autoComplete="off"
-								style={{flex: '1 1 0px'}}
 							/>
-							<button className="ml-3 p-6 text-base w-full rounded-sm text-white transition duration-75 ease-in-out border border-blue-primary bg-blue-primary">
+							<button className="whitespace-nowrap w-full sm:w-auto mt-2 sm:mt-0 sm:ml-3 py-4 px-10 text-base rounded-sm text-white transition duration-75 ease-in-out border border-blue-primary bg-blue-primary">
 								Get started
 							</button>
 						</form>

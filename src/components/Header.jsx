@@ -13,12 +13,12 @@ const Header = () => {
 
   return (
     <header
-      className={`${isNavActive ? "fixed z-20 inset-0 top-0" : "sticky z-20 top-0 "} lg:static border-b bg-white tracking-wide`}
+      className={`${isNavActive ? "fixed inset-0" : "sticky top-0"} lg:static z-20 border-b bg-white tracking-wide`}
     >
 
       <div
         className="px-5 flex mx-auto"
-        style={{maxWidth: '1142px', height: '58px'}}
+        style={{maxWidth: '1220px', height: '58px'}}
       >
 
         <div className="pb-1 flex items-center flex-2">
