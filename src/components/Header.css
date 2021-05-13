@@ -1,16 +1,17 @@
-/* nav section and nav link styles */
+.Nav-offset-top {
+	top: 58px;
+}
+
 .NavSection {
-	padding: 40px 45px;
-	top: calc(100% + 1px);
+	top: 58.5px;
 	transition: all 150ms linear 0s, box-shadow 0ms linear 0s;
-	border-bottom: 1px solid rgb(236, 239, 241);
 }
 
 .NavSection__content {
 	transition: all 300ms ease-in-out 0s;
 }
 
-.NavLink > div:before {
+.NavLink__inner:before {
 	content: "";
 	height: 4px;
 	position: absolute;
@@ -19,6 +20,87 @@
 	right: 0;
 }
 
-.NavLink > div:hover:before {
-	@apply bg-blue-600;
+.NavLink:focus + .NavSection {
+	display: block;
+}
+
+@screen lg {
+	.NavItem:hover .NavLink__inner:before {
+		@apply bg-blue-600;
+	}
+
+	.NavItem:hover .NavSection {
+		opacity: 1 !important;
+		visibility: visible !important;
+		pointer-events: auto !important;
+	}
+
+	.NavItem:hover .NavSection__content {
+		opacity: 1 !important;
+	}
+}
+
+.NavSection > div:first-child {
+	flex: 0 1 0%;
+	grid-template-columns: repeat(1, max-content);
+	grid-gap: 20px;
+	grid-auto-flow: row;
+}
+
+.CardIcon {
+	filter: drop-shadow(rgba(91, 97, 110, 0.14) 0px 2px 2px) drop-shadow(rgba(91, 97, 110, 0.12) 0px 3px 1px) drop-shadow(rgba(91, 97, 110, 0.2) 0px 1px 5px);
+}
+
+.Burger {
+	position: relative;
+	width: 18px;
+	height: 17px;
+	cursor: pointer;
+}
+
+.Burger__inner {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(5, 15, 25);
+	border-radius: 4px;
+	transform: initial;
+	transition: transform 0.3s ease 0s, background-color 0s ease 0s;
+}
+
+.Burger__inner::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(5, 15, 25);
+	border-radius: 4px;
+	transform: translateY(8px);
+	transition: transform 0.3s ease 0s, background-color 0s ease 0s;
+}
+
+.Burger__inner::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(5, 15, 25);
+	border-radius: 4px;
+	transform: translateY(16px) rotate(0deg);
+	transition: transform 0.3s ease 0s, background-color 0s ease 0s;
+}
+
+.Burger.active > .Burger__inner {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.Burger.active > .Burger__inner::before {
+	display: none;
+}
+
+.Burger.active > .Burger__inner::after {
+	transform: rotate(-90deg);
 }
