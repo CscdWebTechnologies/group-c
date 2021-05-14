@@ -19,6 +19,9 @@ module.exports = {
         blue: {
           primary: '#0052ff',
         },
+        green: {
+          primary: '#05b169',
+        }
       },
       borderColor: theme => ({
         DEFAULT: theme('colors.gray.light', 'currentColor')
