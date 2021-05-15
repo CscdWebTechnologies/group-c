@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from './Button';
+
 const BannerCta = props =>  (
 	<div
 		className="flex flex-col justify-center space-y-4"
@@ -11,12 +13,7 @@ const BannerCta = props =>  (
 		<p className="text-sm">
 			Discover how specific cryptocurrencies work — and get a bit of each crypto to try out for yourself.
 		</p>
-		<button
-			className="bg-blue-primary text-white font-medium whitespace-nowrap rounded-sm text-sm py-3 px-4"
-			style={{width: 'fit-content'}}
-		>
-			Start earning
-		</button>
+		<Button value="Start earning" />
 	</div>
 )
 

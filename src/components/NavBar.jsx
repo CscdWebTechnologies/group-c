@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import NavItem from './NavItem';
+import Button from './Button';
 
 import logo from '../static/logo.svg';
 
@@ -40,12 +41,7 @@ const NavBarRight = () => (
     >
       Sign in
     </a>
-    <button
-      className="font-medium text-white border border-blue-primary bg-blue-primary"
-      style={{padding: '10px 12px', lineHeight: '14px', borderRadius: '4px'}}
-    >
-      Get started
-    </button>
+    <Button value="Get started" />
   </div>
 )
 
