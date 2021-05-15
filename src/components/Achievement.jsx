@@ -13,9 +13,9 @@ const Achievement = () => {
 				<div className="flex flex-row flex-auto justify-center text-white my-9">
 					{sections.map((item, id) => {
 		        return (
-		        	<div className="flex-1 text-center" key={id}>
-								<h2 className="font-semibold text-6xl mb-3">{item[0]}</h2>
-								<div className="opacity-80">{item[1]}</div>
+		        	<div className="flex-1 text-center tracking-tight" key={id}>
+								<h2 className="font-semibold text-5xl md:text-6xl mb-3">{item[0]}</h2>
+								<div className="opacity-80 font-light">{item[1]}</div>
 		        	</div>
 		        );
 		      })}

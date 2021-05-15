@@ -39,7 +39,7 @@ const Overview = () => {
 			</div>
 			<div>
 				<h2 className="mb-3 text-xl font-semibold">{feat[1]}</h2>
-				<p className="text-gray-400">{feat[2]}</p>
+				<p className="text-gray-400 font-light">{feat[2]}</p>
 			</div>
 		</div>
 	))

@@ -8,7 +8,7 @@ import Img from '../assets/hosted';
 const BannerImage = () => (
 	<section className="flex flex-row w-full overflow-hidden relative bg-banner h-banner">
 
-		<div className="flex-1/2 flex justify-center w-full">
+		<div className="flex-1/2 flex justify-center w-full relative z-10">
 			<BannerCta />
 		</div>
 
