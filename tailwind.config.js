@@ -11,6 +11,9 @@ module.exports = {
     ],
   },
   theme: {
+    boxShadow: {
+      lg: 'rgb(0 0 0 / 8%) 0px 0px 0px',
+    },
     extend: {
       colors: {
         gray: {
@@ -21,14 +24,20 @@ module.exports = {
         },
         green: {
           primary: '#05b169',
-        }
+        },
+        banner: '#e9f6ff',
       },
       borderColor: theme => ({
         DEFAULT: theme('colors.gray.light', 'currentColor')
       }),
+      height: {
+        banner: '460px',
+        line: '1px',
+      },
       flex: {
+        '1/2': '1 1 50%',
         '2': '2 1 0%',
-        '6': '6 1 0%'
+        '6': '6 1 0%',
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
@@ -41,6 +50,7 @@ module.exports = {
   variants: {
     extend: {
       padding: ['first'],
+      display: ['first'],
     }
   },
   plugins: []

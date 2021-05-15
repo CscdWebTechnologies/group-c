@@ -14,7 +14,7 @@ const NavItem = props => {
       <a
         className="NavLink lg:h-full lg:inline-flex"
         href="#"
-        tabIndex={props.id}
+        tabIndex={props.idx}
       >
         <div className="NavLink__inner px-6 py-5 lg:p-0 lg:h-full lg:mx-4 lg:inline-flex lg:items-center lg:justify-center lg:relative">
           <span className="text-sm font-medium">{props.name}</span>
