@@ -40,7 +40,12 @@ const NavBarRight = () => (
     >
       Sign in
     </a>
-    <Button value="Get started" />
+    <button
+      className="font-medium text-white border border-blue-primary bg-blue-primary"
+      style={{padding: '10px 12px', lineHeight: '14px', borderRadius: '4px'}}
+    >
+      Get started
+    </button>
   </div>
 )
 
