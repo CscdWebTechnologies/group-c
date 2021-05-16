@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import NavItem from './NavItem';
+import Button from './Button';
 
 import logo from '../static/logo.svg';
 
