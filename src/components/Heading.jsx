@@ -6,7 +6,7 @@ const Heading = props => {
 			<h2 className="mb-6 text-4xl font-semibold text-center">
 				{props.title}
 			</h2>
-			<p className="text-center font-light text-gray-400">
+			<p className="text-center font-light text-gray-600">
 				{props.subTitle}
 			</p>
 		</>

@@ -1,19 +1,16 @@
 import React from 'react';
 
-const Card = props => {
+
+const NavItemLink = props => {
 	const hasIcon = !('icon' in props && props.icon == undefined);
 	const hasDescription = !('description' in props && props.description == undefined);
 
 	return (
-		<a
-			className="lg:inline-flex"
-			style={{minWidth: '145px'}}
-			href="#"
-		>
+		<a className="lg:inline-flex" style={{minWidth: '145px'}} href="#">
 			{hasIcon ?
 				<img
-					className="hidden lg:block CardIcon mr-4"
-					src="https://images.ctfassets.net/q5ulk4bp65r7/1rFQCqoq8hipvVJSKdU3fQ/21ab733af7a8ab404e29b873ffb28348/coinbase-icon2.svg"
+					className="hidden lg:block NavLinkIcon mr-4"
+					src="https://images.ctfassets.net/q5ulk4bp65r7/1VeWI2Rpj7YCnzeKoPpsMX/419fa422554e8fa3a9ec301eaa90dcfd/round-wallet.svg"
 					alt="icon"
 					height="40"
 					width="40"
@@ -38,4 +35,4 @@ const Card = props => {
 	)
 }
 
-export default Card
+export default NavItemLink

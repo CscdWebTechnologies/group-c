@@ -16,19 +16,18 @@ const NavBarLeft = () => (
 )
 
 const NavBarMiddle = props => {
-  const listNavItem = menu.map(item => (
-    <NavItem
-      idx={item.id}
-      key={item.id}
-      name={item.name}
-      links={item.links}
-      summary={item.summary}
-    />
-  ))
   return (
-    <nav className={`Nav ${props.active ? "Nav-offset-top h-full absolute inset-x-0 border-t flex flex-col overflow-y-scroll" : "hidden"} lg:static lg:h-auto lg:flex lg:flex-row lg:items-center lg:justify-center lg:flex-6 lg:overflow-visible lg:border-t-0`}>
-      {listNavItem}
-    </nav>
+    <div className={`Nav ${props.active ? "Nav-offset-top h-full absolute inset-x-0 border-t flex flex-col overflow-y-scroll" : "hidden"} lg:static lg:h-auto lg:flex lg:flex-row lg:items-center lg:justify-center lg:flex-6 lg:overflow-visible lg:border-t-0`}>
+      {menu && menu.map(item => (
+        <NavItem
+          key={item.name}
+          idx={item.id}
+          name={item.name}
+          links={item.links}
+          summary={item.summary}
+        />
+      ))}
+    </div>
   )
 }
 
@@ -55,7 +54,7 @@ const NavBar = () => {
   const toggleMenu = () => isNavActive ? setNavActive(false) : setNavActive(true)
 
   return (
-    <section className={`${isNavActive ? "fixed inset-0" : "sticky top-0"} lg:static z-20 border-b bg-white tracking-wide`}>
+    <nav className={`${isNavActive ? "fixed inset-0" : "sticky top-0"} lg:static z-20 border-b bg-white tracking-wide`}>
       <div
         className="px-5 flex mx-auto"
         style={{maxWidth: '1220px', height: '58px'}}
@@ -72,7 +71,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   )
 }
 

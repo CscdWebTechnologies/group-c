@@ -29,17 +29,17 @@ const features = [
 
 const Overview = () => {
 
-	const listFeatures = features.map(feat => (
-		<div key={feat.id} className="flex mb-10">
+	const listFeatures = features.map((feat, id) => (
+		<div key={id} className="flex mb-10">
 			<div
-				className="flex-shrink-0 w-16 h-16 mr-7 -mt-2 rounded-full flex feats-center justify-center"
+				className="flex-shrink-0 w-16 h-16 mr-7 -mt-2 rounded-full flex items-center justify-center"
 				style={{boxShadow: 'rgb(218 225 233 / 56%) 0px 8px 16px'}}
 			>
 				<svg width="30" height="32" viewBox="0 0 30 32"><g fill="none" fillRule="evenodd"><path fill="#D4EEFF" d="M10 32h10V10H10z"></path><path fill="#1752F0" d="M20 32h10V0H20z"></path><path fill="#55B4FC" d="M0 32h10V19H0z"></path></g></svg>
 			</div>
 			<div>
 				<h2 className="mb-3 text-xl font-semibold">{feat[1]}</h2>
-				<p className="text-gray-400 font-light">{feat[2]}</p>
+				<p className="text-gray-500 font-light">{feat[2]}</p>
 			</div>
 		</div>
 	))

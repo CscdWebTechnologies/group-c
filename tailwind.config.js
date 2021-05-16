@@ -14,14 +14,17 @@ module.exports = {
     extend: {
       colors: {
         gray: {light: 'rgb(236, 239, 241)'},
-        blue: {primary: '#0052ff'},
+        blue: {primary: '#0052ff', dark: '#113355'},
         green: {primary: '#05b169'},
-        banner: '#e9f6ff',
+        banner: {primary: '#113355', secondary: '#e9f6ff'},
       },
       borderColor: theme => ({
         DEFAULT: theme('colors.gray.light', 'currentColor')
       }),
-      height: {banner: '460px', line: '1px'},
+      height: {
+        banner: '460px',
+        line: '1px'
+      },
       flex: {
         '1/2': '1 1 50%',
         '2': '2 1 0%',
@@ -39,6 +42,8 @@ module.exports = {
     extend: {
       padding: ['first'],
       display: ['first'],
+      borderWidth: ['first'],
+      textColor: ['last'],
     }
   },
   plugins: []

@@ -1,4 +1,4 @@
-const menu = [
+export default [
   {
     name: "Prices",
   },
@@ -45,5 +45,3 @@ const menu = [
     name: "Company"
   },
 ]
-
-export default menu

@@ -2,10 +2,10 @@ import React from 'react';
 
 const BannerCta = props =>  (
 	<div
-		className="flex flex-col justify-center space-y-4"
+		className="flex flex-col justify-center text-center md:text-left items-center md:items-start mx-auto md:mx-0 space-y-4"
 		style={{minWidth: '250px', maxWidth: '350px'}}
 	>
-		<h2 className="text-4xl font-medium">
+		<h2 className="text-3xl md:text-4xl font-medium">
 			Earn up to $28 worth of crypto
 		</h2>
 		<p className="text-sm">

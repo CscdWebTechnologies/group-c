@@ -47,7 +47,7 @@
 	grid-auto-flow: row;
 }
 
-.CardIcon {
+.NavLinkIcon {
 	filter: drop-shadow(rgba(91, 97, 110, 0.14) 0px 2px 2px) drop-shadow(rgba(91, 97, 110, 0.12) 0px 3px 1px) drop-shadow(rgba(91, 97, 110, 0.2) 0px 1px 5px);
 }
 
