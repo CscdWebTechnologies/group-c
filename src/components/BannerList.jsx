@@ -3,19 +3,38 @@ import React from 'react';
 import BannerCta from './BannerCta';
 
 const list_items = [
-	["", "SKALE", "SKL", "Earn $3 SKL"],
-	["", "Ampleforth Governance Token", "FORTH", "Earn $3 FORTH"],
-	["", "The Graph", "GRT", "Earn $3 GRT"],
-	["", "Stellar Lumens", "XLM", "Earn $3 XLM"],
+	[
+		"https://static-assets.coinbase.com/earn/campaigns/skale/asset-logo.svg",
+		"SKALE",
+		"SKL",
+		"Earn $3 SKL"
+	],
+	[
+		"https://static-assets.coinbase.com/earn/campaigns/ampleforth-governance-token/asset-logo.svg", 
+		"Ampleforth Governance Token", 
+		"FORTH", 
+		"Earn $3 FORTH"],
+	[
+		"https://static-assets.coinbase.com/earn/campaigns/the-graph/asset-logo.svg", 
+		"The Graph", 
+		"GRT", 
+		"Earn $3 GRT"
+	],
+	[
+		"https://static-assets.coinbase.com/earn/campaigns/stellar/asset-logo.svg", 
+		"Stellar Lumens", 
+		"XLM", 
+		"Earn $3 XLM"
+	]
 ]
 
 const BannerListItem = props => (
 	<div
-		className="bg-white rounded-none md:rounded-md mb-0 md:mb-2 hover:shadow-xl cursor-pointer flex items-center w-full p-6 whitespace-nowrap first:border-t sm:first:border-t-0 border-b border-r border-l md:border-0"
+		className="bg-white rounded-none md:rounded-md mb-0 md:mb-2 hover:shadow-xl cursor-pointer flex items-center w-full p-6 whitespace-nowrap first:border-t md:first:border-t-0 border-b border-r border-l md:border-0"
 		style={{transition: 'box-shadow 500ms ease 0s, opacity 500ms ease 0s, z-index 0ms ease-out 500ms'}}
 	>
 		<img
-			src="https://static-assets.coinbase.com/earn/campaigns/skale/asset-logo.svg"
+			src={props.icon}
 			alt="image"
 			height="38px"
 			width="38px"
@@ -42,7 +61,13 @@ const BannerList = () => {
 					<div className="w-full">
 						<div className="BannerList flex flex-col flex-grow justify-center">
 							{list_items.map((item, id) => (
-								<BannerListItem key={id} title={item[1]} sub={item[2]} earn={item[3]} />
+								<BannerListItem
+									key={id}
+									icon={item[0]}
+									title={item[1]}
+									sub={item[2]}
+									earn={item[3]}
+								/>
 							))}
 							<a className="block pt-3 pr-6 text-blue-primary" href="#">
 								View more >

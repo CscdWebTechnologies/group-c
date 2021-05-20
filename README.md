@@ -1,10 +1,8 @@
-## Coinbase X
-
-[Coinbase](https://www.coinbase.com/) homepage clone.
+**Coinbase homepage clone.**
 
 
 ## Contributors
 
-@kaboe-ui
-@manuelnut 
+@kaboe-ui  
+@manuelnut  
 @prince01-1
